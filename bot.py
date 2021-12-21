@@ -6,18 +6,17 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 import pandas as pd
 import random
-import numpy as np
 
 options = Options()
 options.add_argument("--headless")
 options.add_argument("--window-size=1920x1080")
-options.add_argument("user-agent=Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/73.0.3683.75 Safari/537.36")
-driver = webdriver.Chrome(options=options, executable_path='./chromedriver 2')
+options.add_argument("user-agent=_____")
+driver = webdriver.Chrome(options=options, executable_path='./chromedriver')
 
 load_dotenv()
 TOKEN = os.getenv('DISCORD_TOKEN')
 bot = commands.Bot(command_prefix='#')
-bw_list = []
+bw_list = ["DISCORD_USER_TOKENS"]
 
 @bot.event
 async def on_ready():
