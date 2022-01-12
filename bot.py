@@ -4,7 +4,6 @@ from dotenv import load_dotenv
 from time import sleep
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-import pandas as pd
 import random
 
 options = Options()
